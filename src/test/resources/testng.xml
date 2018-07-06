@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SuiteName" verbose="2" parallel="tests" thread-count="3">
+
+    <test name="test1" >
+        <groups>
+            <run>
+                <include name="unit"/>
+                <include name="web"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="samples.SampleTest"/>
+        </classes>
+    </test>
+
+    <test name="test2">
+
+    </test>
+</suite>
